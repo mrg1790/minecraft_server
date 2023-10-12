@@ -1,4 +1,4 @@
-FROM openjdk:22-oraclelinux8
+FROM --platform=linux/x86-64 openjdk:22-oraclelinux8
 
 LABEL maintainer="asabhi6776"
 
