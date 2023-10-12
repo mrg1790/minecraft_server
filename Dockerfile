@@ -8,7 +8,7 @@ WORKDIR /minecraft
 
 RUN microdnf install wget -y
 
-#COPY ./eula.txt /minecraft
+COPY ./eula.txt /minecraft
 
 COPY ./paper-1.20.1-43.jar /minecraft/server.jar
 
@@ -18,7 +18,7 @@ RUN chown -R 0:0 /minecraft
 
 USER 0
 
-#CMD ["java", "-jar", "paper-1.19.2-141.jar"]
+CMD ["java", "-jar", "paper-1.19.2-141.jar"]
 
 EXPOSE 25565
 
