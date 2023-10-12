@@ -12,11 +12,11 @@ RUN microdnf install wget -y
 
 COPY ./paper-1.20.1-43.jar /minecraft/server.jar
 
-RUN chmod -R 755 /minecraft
+#RUN chmod -R 755 /minecraft
 
-RUN chown -R 1000:1000 /minecraft
+#RUN chown -R 1000:1000 /minecraft
 
-USER 1000
+USER 0
 
 #CMD ["java", "-jar", "paper-1.19.2-141.jar"]
 
